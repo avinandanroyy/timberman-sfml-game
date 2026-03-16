@@ -3,26 +3,18 @@
 ![C++](https://img.shields.io/badge/language-C++-blue)
 ![SFML](https://img.shields.io/badge/library-SFML-green)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-orange)
 
-A fast-paced **2D lumberjack arcade game** built using **C++** and the **Simple and Fast Multimedia Library (SFML)**.
+A fast-paced **2D lumberjack arcade game** built using **C++** and **SFML (Simple and Fast Multimedia Library)**.
 
-The objective is simple: **chop the tree as fast as possible while avoiding branches and managing time**.
+The goal is simple: **chop the tree quickly, avoid branches, and survive as long as possible.**
 
 ---
 
-# 🎮 Gameplay
+# 🎮 Gameplay Screenshots
 
-* Chop the tree from **left or right**
-* Avoid falling branches
-* Each successful chop adds a small amount of time
-* Survive as long as possible and beat your score
+![Gameplay Screenshot 1](screenshot/gameplay1.png)
 
-*(You can place a gameplay screenshot or GIF here later)*
-
-```
-docs/gameplay.gif
-```
+![Gameplay Screenshot 2](screenshot/gameplay2.png)
 
 ---
 
@@ -52,10 +44,14 @@ Timber-SFML-Game/
 ├── font/
 │   └── KOMIKAP_.ttf
 │
+├── screenshot/
+│   ├── gameplay1.png
+│   └── gameplay2.png
+│
 └── README.md
 ```
 
-⚠️ The game **requires these folders** to exist in the same directory as the executable.
+⚠️ The **textures**, **sound**, and **font** folders must exist in the same directory as the executable.
 
 ---
 
@@ -115,7 +111,7 @@ g++ main.cpp -o main -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 ### Setup
 
 1. Download the **MinGW version of SFML**
-2. Extract to:
+2. Extract it to:
 
 ```
 C:\SFML
@@ -129,13 +125,13 @@ g++ main.cpp -I"C:\SFML\include" -L"C:\SFML\lib" -lsfml-graphics -lsfml-window -
 
 ### Copy DLL Files
 
-Copy all `.dll` files from:
+Go to:
 
 ```
 C:\SFML\bin
 ```
 
-Paste them into the folder containing `main.exe`.
+Copy all `.dll` files and paste them into the folder containing **main.exe**.
 
 ### Run
 
@@ -147,12 +143,12 @@ Paste them into the folder containing `main.exe`.
 
 # 🎮 Controls
 
-| Key         | Action     |
-| ----------- | ---------- |
-| Enter       | Start Game |
-| Left Arrow  | Chop Left  |
-| Right Arrow | Chop Right |
-| Escape      | Quit Game  |
+| Key         | Action              |
+| ----------- | ------------------- |
+| Enter       | Start Game          |
+| Left Arrow  | Chop from the left  |
+| Right Arrow | Chop from the right |
+| Escape      | Quit Game           |
 
 ---
 
@@ -166,9 +162,9 @@ Paste them into the folder containing `main.exe`.
 
 # 📌 Future Improvements
 
-* Add scoring leaderboard
 * Add game menu
+* Add score leaderboard
+* Add improved animations
 * Add sound settings
-* Improve animations
 
 ---
